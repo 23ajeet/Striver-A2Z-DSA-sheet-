@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+//sseries 1 1 2 3 5 8 13 21 34..
+
+int main()
+{
+int n;
+cin>>n;
+int nextNumber;
+int a=0;
+int b=1;
+if(n==1 || n==2){
+        cout<<b;
+}
+else{
+for(int i=1; i<n; i++){
+        nextNumber =a+b;
+        a=b;
+        b=nextNumber;
+
+}
+cout <<nextNumber;
+}
+}
