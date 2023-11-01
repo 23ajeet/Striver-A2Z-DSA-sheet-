@@ -1,0 +1,27 @@
+//qn Write a program to input an integer n and print the sum of all its even digits and sum of all its odd digits separately
+
+
+
+#include<iostream>
+using namespace std;
+
+int main() {
+	int n;
+	cin>>n;
+	int even=0, odd=0;
+	while (n){
+		int remainder= n%10;
+
+	if(remainder%2==0){
+		even = even +remainder;
+	}
+	
+	else {
+		odd= odd+remainder;
+	}
+n=n/10;
+	}
+
+
+	 cout<<even<<" "<<odd;
+}
